@@ -53,8 +53,8 @@
 &kp CAPS    &kp F1      &kp F2      &kp F3      &kp F4       &kp F5      &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10   &kp F11
 &trans      &kp N1      &kp N2      &kp N3      &kp N4       &kp N5      &mmv MOVE_DOWN   &kp N6           &kp N7           &kp N8      &kp N9     &kp N0    &kp F12
 &trans      &kp EXCL    &kp AT      &kp HASH    &kp DLLR     &kp PRCNT   &mmv MOVE_LEFT   &kp CARET        &kp AMPS         &kp ASTRK   &kp LPAR   &kp RPAR  &trans
-&trans      &kp MINUS   &kp EQUAL   &kp UNDER   &kp PLUS     &trans      &mmv MOVE_RIGHT  &trans           &kp LBRC         &kp RBRC    &kp LBKT   &kp RBKT  &trans
-&kp C_MUTE  &trans      &trans      &trans      &trans       &trans      &mkp LCLK        &trans           &mo 3            &trans      &trans     &trans
+&trans      &kp MINUS   &kp EQUAL   &kp UNDER   &kp PLUS     &trans      &mmv MOVE_RIGHT  &mkp RCLK        &kp LBRC         &kp RBRC    &kp LBKT   &kp RBKT  &trans
+&kp C_MUTE  &trans      &trans      &trans      &trans       &trans      &mkp MCLK        &mkp LCLK        &mo 3            &trans      &trans     &trans
             >;
             sensor-bindings = <&scroll_encoder>;
             display-name = "MOD";
@@ -65,7 +65,7 @@
 &trans     &trans        &trans          &trans        &trans        &trans          &mmv MOVE_UP     &trans     &trans    &trans      &trans     &trans       &trans
 &trans     &trans        &trans          &trans        &trans        &trans          &mmv MOVE_DOWN   &kp PG_UP  &kp HOME  &kp UP      &kp END    &trans       &trans  
 &trans     &trans        &trans          &trans        &trans        &trans          &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT  &kp DOWN    &kp RIGHT  &kp DEL      &trans  
-&trans     &trans        &trans          &trans        &trans        &trans          &mmv MOVE_RIGHT  &mkp MCLK  &mkp RCLK &trans      &trans     &trans       &trans
+&trans     &trans        &trans          &trans        &trans        &trans          &mmv MOVE_RIGHT  &trans     &trans    &trans      &trans     &trans       &trans
 &trans     &trans        &trans          &trans        &mo 3         &trans          &mkp LCLK        &trans     &trans    &trans      &trans     &trans
             >;
             sensor-bindings = <&scroll_encoder>;
