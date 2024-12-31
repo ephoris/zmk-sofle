@@ -62,11 +62,11 @@
 
         layer_2 {
             bindings = <
-&trans     &trans        &trans          &trans        &trans        &trans          &mmv MOVE_UP     &trans  &trans  &trans      &trans     &trans       &trans
-&trans     &trans        &trans          &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &trans  &trans      &trans     &trans       &trans  
-&trans     &trans        &trans          &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &trans  &trans      &trans     &trans       &trans  
-&trans     &trans        &trans          &trans        &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans  &trans      &trans     &trans       &trans
-&trans     &trans        &trans          &trans        &mo 3         &trans          &mkp LCLK        &trans  &trans  &trans      &trans     &trans
+&trans     &trans        &trans          &trans        &trans        &trans          &mmv MOVE_UP     &trans     &trans    &trans      &trans     &trans       &trans
+&trans     &trans        &trans          &trans        &trans        &trans          &mmv MOVE_DOWN   &kp PG_UP  &kp HOME  &kp UP      &kp END    &trans       &trans  
+&trans     &trans        &trans          &trans        &trans        &trans          &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT  &kp DOWN    &kp RIGHT  &kp DEL      &trans  
+&trans     &trans        &trans          &trans        &trans        &trans          &mmv MOVE_RIGHT  &mkp MCLK  &mkp RCLK &trans      &trans     &trans       &trans
+&trans     &trans        &trans          &trans        &mo 3         &trans          &mkp LCLK        &trans     &trans    &trans      &trans     &trans
             >;
             sensor-bindings = <&scroll_encoder>;
             display-name = "NAV";
@@ -74,11 +74,11 @@
 
         layer_3 {
             bindings = <
-&sys_reset  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &trans  &trans  &trans  &trans  &trans   &trans
-&bootloader &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &trans  &trans  &trans  &trans   &trans
-&soft_off   &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &trans  &trans  &trans  &trans   &trans
-&trans      &trans        &trans          &trans        &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans  &trans   &trans
-&trans      &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans  &trans  &trans
+&sys_reset  &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4    &mmv MOVE_UP     &trans  &trans  &trans  &trans  &trans   &trans
+&bootloader &bt BT_CLR      &bt BT_CLR_ALL  &trans        &rgb_ug RGB_BRI &rgb_ug RGB_SPI &mmv MOVE_DOWN   &trans  &trans  &trans  &trans  &trans   &trans
+&soft_off   &out OUT_USB    &out OUT_BLE    &trans        &rgb_ug RGB_BRD &rgb_ug RGB_SPD &mmv MOVE_LEFT   &trans  &trans  &trans  &trans  &trans   &trans
+&trans      &rgb_ug RGB_TOG &rgb_ug RGB_EFF &trans        &trans          &trans          &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans  &trans   &trans
+&trans      &trans          &trans          &trans        &trans          &trans          &mkp LCLK        &trans  &trans  &trans  &trans  &trans
             >;
             sensor-bindings = <&scroll_encoder>;
             display-name = "NUM";
