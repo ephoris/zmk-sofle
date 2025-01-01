@@ -56,7 +56,6 @@
 &kp LSHFT   &kp Z        &kp X         &kp C      &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M   &kp COMMA  &kp DOT    &kp FSLH    &kp RIGHT_SHIFT
 &kp C_MUTE  &kp LEFT_GUI &kp LEFT_ALT  &kp LCTRL  &mo 1   &kp SPACE    &none            &kp ENTER  &mo 2   &kp BSPC   &kp RCTRL  &kp RALT
             >;
-            # sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
             sensor-bindings = <&scroll_encoder>;
             display-name = "BASE";
         };
