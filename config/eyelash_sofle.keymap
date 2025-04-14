@@ -57,8 +57,8 @@
 &kp CAPS    &kp F1      &kp F2      &kp F3      &kp F4       &kp F5      &trans   &kp F6           &kp F7           &kp F8      &kp F9     &kp F10   &kp F11
 &trans      &kp N1      &kp N2      &kp N3      &kp N4       &kp N5      &trans   &kp N6           &kp N7           &kp N8      &kp N9     &kp N0    &kp F12
 &trans      &kp EXCL    &kp AT      &kp HASH    &kp DLLR     &kp PRCNT   &trans   &kp CARET        &kp AMPS         &kp ASTRK   &kp LPAR   &kp RPAR  &trans
-&trans      &kp MINUS   &kp EQUAL   &kp UNDER   &kp PLUS     &trans      &trans   &mkp RCLK        &kp LBRC         &kp RBRC    &kp LBKT   &kp RBKT  &trans
-&kp C_MUTE  &trans      &trans      &trans      &trans       &trans      &none    &mkp LCLK        &mo 3            &trans      &trans     &trans
+&trans      &kp MINUS   &kp EQUAL   &kp UNDER   &kp PLUS     &trans      &trans   &trans           &kp LBRC         &kp RBRC    &kp LBKT   &kp RBKT  &trans
+&kp C_MUTE  &trans      &trans      &trans      &trans       &trans      &none    &trans           &mo 3            &trans      &trans     &trans
             >;
             display-name = "MOD";
             sensor-bindings = <&scroll_encoder>;
@@ -69,7 +69,7 @@
 &trans     &trans       &trans      &trans      &trans       &trans      &trans   &trans     &trans    &trans      &trans     &trans       &trans
 &trans     &trans       &trans      &trans      &trans       &trans      &trans   &kp PG_UP  &kp HOME  &kp UP      &kp END    &trans       &trans  
 &trans     &trans       &trans      &trans      &trans       &trans      &trans   &kp PG_DN  &kp LEFT  &kp DOWN    &kp RIGHT  &kp DEL      &trans  
-&trans     &trans       &trans      &trans      &trans       &trans      &trans   &trans     &trans    &trans      &trans     &trans       &trans
+&trans     &trans       &trans      &trans      &trans       &trans      &trans   &tog 3     &trans    &trans      &trans     &trans       &trans
 &trans     &trans       &trans      &trans      &mo 3        &trans      &none    &trans     &trans    &trans      &trans     &trans
             >;
             display-name = "NAV";
@@ -78,11 +78,11 @@
 
         layer_3 {
             bindings = <
-&sys_reset  &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &trans   &trans
-&bootloader &bt BT_CLR      &bt BT_CLR_ALL  &trans        &rgb_ug RGB_BRI &rgb_ug RGB_SPI &trans  &trans  &trans  &trans  &trans  &trans   &trans
-&soft_off   &out OUT_USB    &out OUT_BLE    &trans        &rgb_ug RGB_BRD &rgb_ug RGB_SPD &trans  &trans  &trans  &trans  &trans  &trans   &trans
-&trans      &rgb_ug RGB_TOG &rgb_ug RGB_EFF &trans        &trans          &trans          &trans  &trans  &trans  &trans  &trans  &trans   &trans
-&trans      &trans          &trans          &trans        &trans          &trans          &none   &trans  &trans  &trans  &trans  &trans
+&sys_reset  &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4    &trans  &trans       &kp LNLCK &kp KP_SLASH &kp KP_MULTIPLY &kp BACKSPACE &trans
+&bootloader &bt BT_CLR      &bt BT_CLR_ALL  &trans        &rgb_ug RGB_BRI &rgb_ug RGB_SPI &trans  &kp KP_LPAR  &kp KP_N7 &kp KP_N8    &kp KP_N9       &kp KP_MINUS  &trans
+&soft_off   &out OUT_USB    &out OUT_BLE    &trans        &rgb_ug RGB_BRD &rgb_ug RGB_SPD &trans  &kp KP_RPAR  &kp KP_N4 &kp KP_N5    &kp KP_N6       &kp KP_PLUS   &trans
+&trans      &rgb_ug RGB_TOG &rgb_ug RGB_EFF &trans        &trans          &trans          &trans  &kp KP_COMMA &kp KP_N1 &kp KP_N2    &kp KP_N3       &kp KP_EQUAL  &trans
+&trans      &trans          &trans          &trans        &trans          &trans          &none   &trans       &trans    &kp KP_N0    &kp KP_N0       &kp KP_DOT
             >;
             display-name = "BLE";
             sensor-bindings = <&scroll_encoder>;
