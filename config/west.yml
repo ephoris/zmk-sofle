@@ -13,7 +13,7 @@ manifest:
       url: https://github.com/ephoris/zmk-sofle
       revision: main
     - name: urchin-peripheral-animation
-      remote: gpeye
+      url: https://github.com/GPeye/urchin-peripheral-animation
       revision: main
     - name: zmk
       remote: zmkfirmware
