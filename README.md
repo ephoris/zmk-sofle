@@ -25,5 +25,5 @@
 
 ## Sofle键位图
 
-![Sofle键位图](keymap-drawer/eyelash_sofle.svg)
+<img src="keymap-drawer/soflelip.svg" >
 
