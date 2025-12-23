@@ -79,7 +79,7 @@
         NAV {
             bindings = <
 &to 4   &trans           &trans           &trans           &trans           &trans             &mmv MOVE_UP     &trans         &trans    &trans        &trans     &trans      &sys_reset
-&trans  &trans           &trans           &trans           &trans           &trans             &mmv MOVE_DOWN   &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END    &trans      &trans
+&trans  &trans           &trans           &trans           &trans           &trans             &mmv MOVE_DOWN   &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END    &kp DELETE  &trans
 &trans  &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI    &mmv MOVE_LEFT   &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT  &kp INSERT  &trans
 &trans  &rgb_ug RGB_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD    &mmv MOVE_RIGHT  &to 3          &trans    &trans        &trans     &trans      &trans
 &trans  &trans           &trans           &trans           &trans           &trans             &trans           &trans         &trans    &trans        &trans     &trans
