@@ -155,7 +155,7 @@ layers:
   - HOME
   - $$mdi:arrow-up-bold$$
   - END
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB EFF
