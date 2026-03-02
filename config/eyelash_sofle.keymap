@@ -80,11 +80,11 @@
 
         NAV {
             bindings = <
-&to 4        &trans           &trans           &trans           &trans           &trans             &trans  &trans         &trans    &trans        &trans     &trans   &sys_reset
-&sys_reset   &trans           &trans           &trans           &trans           &trans             &trans  &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END    &kp DEL  &bootloader
-&bootloader  &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI    &trans  &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT  &kp INS  &soft_off
-&soft_off    &rgb_ug RGB_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_BRD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD    &trans  &tog 3         &tog 3    &trans        &trans     &trans   &trans
-&trans       &trans           &trans           &trans           &mo 3            &trans             &trans  &trans         &trans    &trans        &trans     &trans
+&to 4   &trans           &trans           &trans           &trans           &trans             &trans  &trans         &trans    &trans        &trans     &trans   &trans
+&trans  &trans           &trans           &trans           &trans           &trans             &trans  &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END    &kp DEL  &trans
+&trans  &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI    &trans  &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT  &kp INS  &trans
+&trans  &rgb_ug RGB_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_BRD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD    &trans  &tog 3         &tog 3    &trans        &trans     &trans   &trans
+&trans  &trans           &trans           &trans           &mo 3            &trans             &trans  &trans         &trans    &trans        &trans     &trans
             >;
 
             display-name = "nav";
@@ -94,11 +94,11 @@
         NUM {
             display-name = "num";
             bindings = <
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &none   &kp KP_NUMLOCK   &kp KP_SLASH     &kp KP_MULTIPLY  &kp BACKSPACE  &none
-&none  &bt BT_CLR    &none         &none         &none         &none           &none  &none   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS   &none
-&none  &out OUT_USB  &out OUT_BLE  &none         &none         &none           &none  &none   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS    &none
-&none  &sys_reset    &none         &bootloader   &none         &none           &none  &none   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ENTER   &tog 3
-&none  &trans        &trans        &trans        &trans        &trans          &none  &trans  &none            &kp KP_NUMBER_0  &kp KP_NUMBER_0  &kp KP_DOT
+&none      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &none   &kp KP_NUMLOCK   &kp KP_SLASH     &kp KP_MULTIPLY  &kp BACKSPACE  &none
+&none      &bt BT_CLR    &none         &none         &none         &none           &none  &none   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS   &none
+&none      &out OUT_USB  &out OUT_BLE  &none         &none         &none           &none  &none   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS    &none
+&soft_off  &sys_reset    &none         &bootloader   &none         &none           &none  &none   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ENTER   &tog 3
+&none      &trans        &trans        &trans        &trans        &trans          &none  &trans  &none            &kp KP_NUMBER_0  &kp KP_NUMBER_0  &kp KP_DOT
             >;
 
             sensor-bindings = <&scroll_encoder>;
